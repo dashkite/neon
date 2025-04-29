@@ -8,8 +8,6 @@ import browse from "@dashkite/genie-presets/browser"
 
 do browse ({browser, port}) ->
 
-  # TODO the browser sometimes starts up before we've
-  # apparently finished writing the build products
   await sleep 1000
 
   print await test "Tests", [
